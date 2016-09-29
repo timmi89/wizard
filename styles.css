@@ -1,0 +1,32 @@
+*,
+*::before
+*::after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #212227;
+}
+/*tape*/
+.photo:before {
+  content: "";
+  height: 20px;
+  width: 100px;
+  background: rgba(165,161,149,0.5);
+  opacity: 50%;
+  position: absolute;
+  top: -10px;
+  left: 50px;
+}
+/*image*/
+.photo {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 50px auto;
+  border: 5px solid blue;
+  position: relative;
+  box-shadow: 10px 10px 5px #888888;
+}
